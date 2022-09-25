@@ -1,0 +1,168 @@
+html,
+body {
+    background-color: #333;
+    margin: 0;
+  }
+.container{
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+@media (max-width: 1200px) {
+  .container{
+    max-width: 970px;
+  }
+}
+@media (max-width: 990px) {
+  .container{
+    max-width: 750px;
+  }
+  .action{
+    align-items: center;
+    flex-direction: column;
+  }
+  .info-action{
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .container{
+    max-width: none;
+  }
+  .cards{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.header{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 203, 61, 0.81);
+}
+.menu{
+  display: flex;
+  justify-content: center;
+}
+.menu li {
+  margin: auto 10px;
+  list-style-type: none;
+}
+.menu li a {
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+}
+.header .lang a:hover,
+.menu li a:hover{
+  color: rgb(255, 238, 0);
+  border-bottom: 2px solid antiquewhite;
+}
+
+.action{
+  margin: auto 0px;
+  display: flex;
+  background-color: rgb(255, 203, 61);
+  justify-content: space-around;
+}
+.info-action{
+  font-size: 40px;
+  text-shadow: 1px 1px 10px #000;
+}
+.buy{
+  background: none;
+    color: #f2f2ff;
+    font-size: 20px;
+    padding: 15px 25px;
+    border: 1px solid #f2f2ff;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 200px;
+}
+.action .info-action .buy:hover{
+  background-color: #fffcb4;
+}
+.img-action{
+  margin-top: 30px;
+}
+.fresh-chili{
+  height: 60vh;
+    color: #ffffff;
+    text-align: center;
+    background: url(./img/fresh-chili.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+.choose-enjoy{
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.cards {
+  margin: auto 30px 100px;
+  display: flex;
+}
+.cards .card {
+  padding: 15px 10px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  color: #000000;
+  margin: auto 10px 15px;
+}
+.cards .card button {
+  background: none;
+  border: 1px solid #000000;
+  padding: 15px 60px;
+  border-radius: 8px;
+  color: #000000;
+  cursor: pointer;
+}
+.cards .card img {
+  width: 100%;
+}
+.cards .card:hover{
+  background-color: #fffcb4;
+  position: relative;
+  top: -20px;
+}
+.reservation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.reservation-text{
+  font-family:sans-serif;
+  text-decoration: underline;
+}
+.reservation button{
+  border: 1px solid #000000;
+  padding: 15px 50px;
+  border-radius: 8px;
+  color: #000000;
+  cursor: pointer;
+}
+.reservation button:hover{
+  background-color: #fffcb4;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f2f2ff;
+  padding: 30px 0;
+  border-top: 1px solid #f2f2ff;
+  margin: auto 30px;
+}
